@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class="container">
+        <h1 class="text-white">Report</h1>
+        <br>
+        <br>
+        <form action="Monthly_Finance" : method="POST">
+		<div class="form-group">
+			<button type="submit" class="btn btn-success">Monthly Income/Expense/Saving</button>
+		</div>
+		</form>
+		<br>
+		<form action="Yearly_Finance" : method="POST">
+		<div class="form-group">
+			<button type="submit" class="btn btn-success">Yearly Income/Expense/Saving</button>
+		</div>
+		</form>
+		<br>
+		<form action="CurrentNetWorth" : method="POST">
+		<div class="form-group">
+			<button type="submit" class="btn btn-success">Current Net Worth</button>
+		</div>
+		</form>
+		<br>
+		<form action="FinanceFreedom" : method="POST">
+		<div class="form-group">
+			<button type="submit" class="btn btn-success">Financial Freedom</button>
+		</div>
+		</form>
+		<br>
+		<form action="RetirementPlanning" : method="POST">
+		<div class="form-group">
+			<button type="submit" class="btn btn-success">Retirement Planning</button>
+		</div>
+		</form>
+    </div>
+
+{% endblock %}

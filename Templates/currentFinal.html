@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-color: black">
+	<div class="container" style="color:#66FCF1" >
+	  <br>
+      <table class="table table-bordered">
+    <thead>
+      <tr style='background-color:#45A29E'>
+        <th class='text-white'>TYPE</th>
+        <th class='text-white'>AMOUNT</th>
+      </tr>
+    </thead>
+    <tbody style='background-color:#1F2833'>
+      <tr>
+        <td class='text-white'>CURRENT EQUITY NETWORTH</td>
+        <td class='text-white'>₹ {{ k[0] }}</td>
+      </tr>
+      <tr>
+        <td class='text-white'>CURRENT FIXED INCOME NETWORTH</td>
+        <td class='text-white'>₹ {{ k[1] }}</td>
+      </tr>
+      <tr>
+      	<td class='text-white'>CURRENT NETWORTH</td>
+      	<td class='text-white'>₹ {{ k[2] }}</td>
+      </tr>
+    </tbody>
+  	</table>
+	  <img  src = "{{  url_for('static' , filename='graph3.png')}}" alt = "Graph3 Image" width = "660" height = "462"/>
+      <br>
+      <br>
+      
+    </div>
+</div>
+{% endblock %}

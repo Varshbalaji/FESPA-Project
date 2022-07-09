@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class="container text-white">
+        <h1>RETIREMENT PLANNING</h1>
+        <br>
+        <br>
+        <form action="RetirementFinal" method="POST">
+  <div class="form-group">
+    <label class="text-white ">Expected Equity Average Return </label>
+    <input type="number" class="form-control" name="AvgReturnRP">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Expected Fixed Income Average Interest</label>
+    <input type="number" class="form-control" name="AvgIntrestRP">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Expected Inflation</label>
+    <input type="number" class="form-control" name="InflationRP">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Retirement Age</label>
+    <input type="number" class="form-control" name="RetirementAge">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Life Expectancy</label>
+    <input type="number" class="form-control" name="LifeExpectancy">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+{% endblock %}

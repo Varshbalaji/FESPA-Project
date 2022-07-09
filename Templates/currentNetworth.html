@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container text-white">
+        <h1>Current Net Worth </h1>
+        <form action="CurrentFinal" method="POST">
+  <div class="form-group">
+    <label class="text-white ">Expected Equity Average Return </label>
+    <input type="number" class="form-control" name="AvgReturn">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Expected Fixed Income Average Interest</label>
+    <input type="number" class="form-control" name="AvgIntrest">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+{% endblock %}

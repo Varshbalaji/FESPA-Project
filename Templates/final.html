@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-color: black">
+  <table class="table table-bordered">
+    <thead>
+      <tr style='background-color:#45A29E'>
+        <th class='text-white'>TYPE</th>
+        <th class='text-white'>AMOUNT</th>
+      </tr>
+    </thead>
+    <tbody style='background-color:#1F2833'>
+      <tr>
+        <td class='text-white'>INCOME</td>
+        <td class='text-white'>₹ {{ i[0][2] }}</td>
+      </tr>
+      <tr>
+        <td class='text-white'>EXPENSE(NON_DISCRETIONARY)</td>
+        <td class='text-white'>₹ {{ e[0][2] }}</td>
+      </tr>
+      <tr>
+        <td class='text-white'>EXPENSE(DISCRETIONARY)</td>
+        <td class='text-white'>₹ {{ e[1][2] }}</td>
+      </tr>
+      <tr>
+        <td class='text-white'>INVESTMENT</td>
+        <td class='text-white'>₹ {{ e[2][2] }}</td>
+      </tr>
+    </tbody>
+    </table>
+	<br>
+	<br>
+  <div class='row'>
+		<img  src = "{{  url_for('static' , filename='graph0.png')}}" alt = "Graph1 Image" width = "610" height = "427"/>
+
+		<img  src = "{{ url_for('static' , filename='graph1.png')}}" alt = "Graph2 Image" width = "610" height = "427"/>
+	</div>
+</div>
+{% endblock %}

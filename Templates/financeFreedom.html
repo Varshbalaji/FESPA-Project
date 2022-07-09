@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container text-white">
+        <h1>Financial Freedom </h1>
+        <h6> Financial Freedom is a simple thumb rule. A Person is said to achieve Financial Freedom when their networth can take care of atleast 25 years of their latest annual expense.
+        </h6>
+        <br>
+        <br>
+        <form action="FinanceFinal" method="POST">
+  <div class="form-group">
+    <label class="text-white ">Expected Equity Average Return </label>
+    <input type="number" class="form-control" name="AvgReturnFF">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Expected Fixed Income Average Interest</label>
+    <input type="number" class="form-control" name="AvgIntrestFF">
+  </div>
+  <div class="form-group">
+    <label class="text-white ">Expected Inflation</label>
+    <input type="number" class="form-control" name="InflationFF">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+{% endblock %}
